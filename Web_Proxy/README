@@ -1,0 +1,24 @@
+Gabriel Gorospe
+SID: 1696580
+Web Proxy Due March 17, 2023
+
+Makefile
+- creates executable file for myproxy.c
+
+/bin
+
+stores executable file for proxy
+
+/doc
+
+documentationWebProxy.pdf
+- documentation for this project
+
+/src
+
+myproxy.c
+- implements a proxy server that implements secure connection for the client
+
+myproxy.h
+- implements helper functions used by the proxy including RFC time calculator, 
+and a function which creates a path if it is not already present.
