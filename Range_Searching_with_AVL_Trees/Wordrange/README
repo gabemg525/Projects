@@ -1,0 +1,36 @@
+README for HW3
+
+Gabriel Gorospe
+Nov 14, 2022
+CSE101, C. Seshadhri
+
+wordrange.cpp
+Description:
+Inserts the string portion of lines from an input file into a lexicographically self-balancing AVL tree. Outputs line by
+line the amount of nodes in the tree with values that are between two entries from the input file line.
+
+bst.cpp
+Lexicographically self-balancing AVL tree. Upon insertions, Nodes are rotated accordingly to maintain balance. Additionally,
+the subtree sizes and heights at each Node affected by rotations are adjusted with each rotation. Ranges are calculated by 
+accessing subtree sizes which allows any range to be found in O(logn) time.
+
+ Includes a function to print the tree in level order for testing.
+
+Executable:
+- wordrange
+Source:
+- wordrange.cpp
+
+Text:
+- in.txt/out.cpp 
+- simple-input.txt/simple-outpt.txt, more-input.txt/more-output.txt (class provided txt files for testing nqueens.cpp)
+Description:
+Input/output files
+
+Makefile 
+Usage:
+1. run "make," to get executable "wordrange"
+2. run "./wordrange <INPUT FILE> <OUTPUT FILE>"
+
+Citations:
+Used BST codes test study guide as a blueprint for the basic functions in bst.cpp
