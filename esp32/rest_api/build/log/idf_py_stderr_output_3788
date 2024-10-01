@@ -1,0 +1,19 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbmodem14101 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40048836: uart_tx_one_char_uart in ROM
+[0m
+[0;33m0x4200a895: app_main at /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/main/main.c:31 (discriminator 1)
+[0m
+[0;33m0x4037c507: _esp_error_check_failed at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40375b69: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x4037c511: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4038483d: abort at /Users/gabrielgorospe/esp/esp-idf/components/newlib/abort.c:38
+0x4037c507: _esp_error_check_failed at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/esp_err.c:49
+0x4200a895: app_main at /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/main/main.c:31 (discriminator 1)
+0x4208a6fb: main_task at /Users/gabrielgorospe/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037d01d: vPortTaskWrapper at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375aa8: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

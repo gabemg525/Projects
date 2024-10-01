@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbmodem14101 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40380522: adjust_request_size at /Users/gabrielgorospe/esp/esp-idf/components/heap/tlsf/tlsf.c:252
+ (inlined by) tlsf_malloc at /Users/gabrielgorospe/esp/esp-idf/components/heap/tlsf/tlsf.c:1014
+[0m
+[0m

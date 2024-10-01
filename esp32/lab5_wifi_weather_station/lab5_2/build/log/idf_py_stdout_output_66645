@@ -1,0 +1,65 @@
+[1/5] cd /Users/gabrielgorospe/esp/lab5_wifi_weather_station/lab5_2/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp/lab5_wifi_weather_station/lab5_2/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp/lab5_wifi_weather_station/lab5_2/build/wifi_station.bin
+wifi_station.bin binary size 0xbf7e0 bytes. Smallest app partition is 0x100000 bytes. 0x40820 bytes (25%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp/lab5_wifi_weather_station/lab5_2/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp/lab5_wifi_weather_station/lab5_2/build/bootloader/bootloader.bin
+Bootloader binary size 0x5050 bytes. 0x2fb0 bytes (37%) free.
+[2/3] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.20.5/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/lab5_wifi_weather_station/lab5_2/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32c3 -p /dev/cu.usbmodem14401 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 wifi_station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port /dev/cu.usbmodem14401
+Connecting...
+Chip is ESP32-C3 (revision v0.4)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:00:e8:58
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000cffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20560 bytes to 12626...
+Writing at 0x00000000... (100 %)
+Wrote 20560 bytes (12626 compressed) at 0x00000000 in 0.4 seconds (effective 431.7 kbit/s)...
+Hash of data verified.
+Compressed 784352 bytes to 458468...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001bf7b... (7 %)
+Writing at 0x0002431c... (10 %)
+Writing at 0x0002986a... (14 %)
+Writing at 0x00031c33... (17 %)
+Writing at 0x00038bdc... (21 %)
+Writing at 0x0004022c... (25 %)
+Writing at 0x00046c42... (28 %)
+Writing at 0x0004de33... (32 %)
+Writing at 0x00054e14... (35 %)
+Writing at 0x0005c121... (39 %)
+Writing at 0x0006285e... (42 %)
+Writing at 0x00068b61... (46 %)
+Writing at 0x0006ea67... (50 %)
+Writing at 0x00074b42... (53 %)
+Writing at 0x0007a952... (57 %)
+Writing at 0x00080da0... (60 %)
+Writing at 0x00087257... (64 %)
+Writing at 0x0008d4dc... (67 %)
+Writing at 0x00093aef... (71 %)
+Writing at 0x0009999b... (75 %)
+Writing at 0x000a022a... (78 %)
+Writing at 0x000a6b9f... (82 %)
+Writing at 0x000acae3... (85 %)
+Writing at 0x000b3975... (89 %)
+Writing at 0x000bb010... (92 %)
+Writing at 0x000c2641... (96 %)
+Writing at 0x000c8f23... (100 %)
+Wrote 784352 bytes (458468 compressed) at 0x00010000 in 6.1 seconds (effective 1021.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 473.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

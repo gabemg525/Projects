@@ -1,0 +1,55 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbmodem14201 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403783e2: esp_cpu_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m0x40376953: lock_acquire_generic at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:133
+[0m
+[0;33m0x403759dd: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x40379c51: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4038029d: abort at /Users/gabrielgorospe/esp/esp-idf/components/newlib/abort.c:38
+0x40376953: lock_acquire_generic at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:133
+0x40376a69: _lock_acquire_recursive at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:162
+0x40376b33: __retarget_lock_acquire_recursive at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:321
+0x4200d9de: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x4200cf61: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x42018961: esp_log_writev at /Users/gabrielgorospe/esp/esp-idf/components/log/src/os/log_write.c:34
+0x4038020d: esp_log_write at /Users/gabrielgorospe/esp/esp-idf/components/log/src/os/log_write.c:44
+0x420091a7: log_memory_usage at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:51 (discriminator 1)
+0x40376d0a: gpio_interrupt_handler at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:71
+0x403773d6: gpio_isr_loop at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:466
+0x4037744a: gpio_intr_service at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:488
+0x40377199: _xt_lowint1 at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x403783df: xt_utils_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x420029b6: esp_vApplicationIdleHook at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x4037b44d: prvIdleTask at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x4037a4b5: vPortTaskWrapper at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037591c: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40376953: lock_acquire_generic at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:133
+[0m
+[0;33m0x403759dd: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x40379c51: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4038029d: abort at /Users/gabrielgorospe/esp/esp-idf/components/newlib/abort.c:38
+0x40376953: lock_acquire_generic at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:133
+0x40376a69: _lock_acquire_recursive at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:162
+0x40376b33: __retarget_lock_acquire_recursive at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:321
+0x4200d9de: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x4200cf61: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x42018961: esp_log_writev at /Users/gabrielgorospe/esp/esp-idf/components/log/src/os/log_write.c:34
+0x4038020d: esp_log_write at /Users/gabrielgorospe/esp/esp-idf/components/log/src/os/log_write.c:44
+0x420091a7: log_memory_usage at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:51 (discriminator 1)
+0x40376d0a: gpio_interrupt_handler at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:71
+0x403773d6: gpio_isr_loop at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:466
+0x4037744a: gpio_intr_service at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:488
+0x40377199: _xt_lowint1 at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x403783df: xt_utils_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x420029b6: esp_vApplicationIdleHook at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x4037b44d: prvIdleTask at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x4037a4b5: vPortTaskWrapper at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037591c: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

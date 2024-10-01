@@ -1,0 +1,2 @@
+[1/5] cd /Users/gabrielgorospe/esp/lab5_wifi_weather_station/scan/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp/lab5_wifi_weather_station/scan/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp/lab5_wifi_weather_station/scan/build/scan.bin
+scan.bin binary size 0xbb000 bytes. Smallest app partition is 0x100000 bytes. 0x45000 bytes (27%) free.

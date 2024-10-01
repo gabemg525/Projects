@@ -1,0 +1,20 @@
+[1/5] cd /Users/gabrielgorospe/esp/hello_world/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp/hello_world/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp/hello_world/build/hello_world.bin
+hello_world.bin binary size 0x32f50 bytes. Smallest app partition is 0x100000 bytes. 0xcd0b0 bytes (80%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp/hello_world/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp/hello_world/build/bootloader/bootloader.bin
+Bootloader binary size 0x5270 bytes. 0x2d90 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/hello_world/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem51850045511 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/cu.usbmodem51850045511
+
+A fatal error occurred: Could not open /dev/cu.usbmodem51850045511, the port is busy or doesn't exist.
+([Errno 2] could not open port /dev/cu.usbmodem51850045511: [Errno 2] No such file or directory: '/dev/cu.usbmodem51850045511')
+
+Hint: Check if the port is correct and ESP connected
+
+FAILED: CMakeFiles/flash /Users/gabrielgorospe/esp/hello_world/build/CMakeFiles/flash 
+cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/hello_world/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

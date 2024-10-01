@@ -1,0 +1,976 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403783ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug 21 2024 16:12:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a790h ( 42896) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001a7b8 vaddr=3fc92400 size=02a54h ( 10836) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d214 vaddr=40374000 size=02e04h ( 11780) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=189c8h (100808) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=000389f0 vaddr=40376e04 size=0b578h ( 46456) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     hello_world[0m
+[0;32mI (190) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Aug 21 2024 16:11:08[0m
+[0;32mI (200) app_init: ELF file SHA256:  b382ceabd...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (234) heap_init: At 3FC95710 len 00054000 (336 KiB): RAM[0m
+[0;32mI (240) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (246) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (267) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (280) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (287) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (294) main_task: Started on CPU0[0m
+[0;32mI (304) main_task: Calling app_main()[0m
+[0;32mI (304) main_task: Returned from app_main()[0m
+[0;32mI (2754) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (2754) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (2754) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (2764) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3664) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3664) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3664) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3664) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (4264) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (4264) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (4264) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (4264) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5194) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5194) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5194) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5194) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5474) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5474) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5474) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5474) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5724) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5724) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5724) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5724) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5974) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5974) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5974) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5974) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6254) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6254) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6254) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6264) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6384) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6384) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6384) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6394) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6574) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6574) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6574) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6584) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7154) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7154) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7154) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7154) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7524) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7524) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7524) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7524) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7654) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7654) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7654) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7664) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7664) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7674) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7674) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7674) Memory: Free DROM: 390636 bytes[0m
+
+***ERROR*** A stack overflow in task Logging Task has been detected.
+
+
+Backtrace: 0x403759d5:0x3fc99ab0 0x40379c39:0x3fc99ad0 0x4037a88e:0x3fc99af0 0x4037ba97:0x3fc99b70 0x4037a954:0x3fc99b90 0x4037a94a:0x00000001 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: b382ceabd
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 21 2024 16:12:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a790h ( 42896) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001a7b8 vaddr=3fc92400 size=02a54h ( 10836) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d214 vaddr=40374000 size=02e04h ( 11780) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=189c8h (100808) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=000389f0 vaddr=40376e04 size=0b578h ( 46456) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     hello_world[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Aug 21 2024 16:11:08[0m
+[0;32mI (200) app_init: ELF file SHA256:  b382ceabd...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC95710 len 00054000 (336 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (286) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) main_task: Returned from app_main()[0m
+[0;32mI (323) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (323) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (323) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (323) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (1473) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (1473) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (1473) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (1473) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (1643) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (1643) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (1643) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (1643) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (2343) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (2343) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (2343) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (2343) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (2843) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (2843) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (2843) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (2843) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3263) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3263) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3263) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3263) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3643) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3653) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3653) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3653) Memory: Free DROM: 390636 bytes[0m
+
+***ERROR*** A stack overflow in task Logging Task has been detected.
+
+
+Backtrace: 0x403759d5:0x3fc99ab0 0x40379c39:0x3fc99ad0 0x4037a88e:0x3fc99af0 0x4037ba97:0x3fc99b70 0x4037a954:0x3fc99b90 0x4037a94a:0x00000001 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: b382ceabd
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 21 2024 16:12:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a790h ( 42896) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001a7b8 vaddr=3fc92400 size=02a54h ( 10836) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d214 vaddr=40374000 size=02e04h ( 11780) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=189c8h (100808) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=000389f0 vaddr=40376e04 size=0b578h ( 46456) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     hello_world[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Aug 21 2024 16:11:08[0m
+[0;32mI (200) app_init: ELF file SHA256:  b382ceabd...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC95710 len 00054000 (336 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (286) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) main_task: Returned from app_main()[0m
+[0;32mI (1023) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (1023) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (1023) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (1023) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (2383) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (2383) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (2383) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (2383) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3673) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3673) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3673) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3673) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3813) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3813) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3813) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3813) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5273) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5273) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5273) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5273) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6023) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6023) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6023) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6023) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6663) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6663) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6663) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6663) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7363) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7363) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7363) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7363) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7883) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7883) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7883) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7893) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (8373) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (8373) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (8373) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (8373) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (8933) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (8933) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (8933) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (8933) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (9483) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (9483) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (9483) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (9483) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (9933) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (9933) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (9933) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (9933) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (10203) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (10203) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (10203) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (10203) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (10293) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (10293) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (10293) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (10293) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (10483) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (10483) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (10483) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (10483) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (13823) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (13823) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (13823) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (13833) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (14463) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (14463) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (14463) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (14463) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (14593) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (14593) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (14593) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (14593) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (14693) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (14693) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (14703) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (14703) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (15073) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (15073) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (15073) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (15073) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (15313) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (15313) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (15313) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (15313) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (15873) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (15873) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (15873) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (15873) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (16253) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (16253) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (16253) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (16253) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (16593) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (16593) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (16593) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (16593) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (16933) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (16933) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (16933) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (16933) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (17263) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (17263) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (17263) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (17263) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (17573) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (17573) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (17573) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (17573) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (17893) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (17893) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (17893) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (17893) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (18233) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (18233) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (18233) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (18233) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (24603) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (24603) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (24603) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (24603) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (24883) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (24883) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (24883) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (24893) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (25183) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (25183) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (25183) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (25193) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (25503) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (25503) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (25503) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (25513) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (26143) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (26143) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (26143) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (26143) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (26493) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (26493) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (26493) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (26493) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (26823) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (26823) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (26823) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (26823) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (27093) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (27093) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (27093) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (27093) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (27323) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (27323) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (27323) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (27323) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (27463) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (27463) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (27463) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (27463) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (27863) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (27863) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (27863) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (27863) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (28093) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (28093) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (28093) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (28093) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (28293) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (28293) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (28293) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (28293) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (28493) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (28493) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (28493) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (28493) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (28573) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (28573) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (28573) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (28583) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (28813) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (28813) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (28813) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (28823) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (28933) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (28933) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (28933) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (28943) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (29133) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (29133) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (29133) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (29143) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (29413) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (29413) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (29413) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (29413) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (29713) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (29713) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (29713) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (29723) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (30133) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (30133) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (30133) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (30133) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (30373) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (30373) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (30373) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (30373) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (30493) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (30493) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (30493) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (30493) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (30593) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (30593) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (30593) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (30593) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (30923) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (30923) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (30923) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (30933) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31133) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31133) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31133) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (31133) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31263) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31263) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31263) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (31263) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31343) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31343) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31343) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (31353) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31473) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31473) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31473) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (31473) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31573) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31573) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31573) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (31583) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31783) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31783) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31783) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (31783) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (31993) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (31993) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (31993) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (32003) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (32443) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (32443) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (32443) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (32443) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (32833) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (32833) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (32833) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (32833) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (33123) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (33123) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (33123) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (33123) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (33433) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (33433) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (33433) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (33433) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (137103) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (137103) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (137103) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (137113) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (137563) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (137563) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (137563) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (137563) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (138153) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (138153) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (138153) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (138163) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (140733) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (140733) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (140733) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (140733) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (140873) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (140873) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (140873) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (140873) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (141463) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (141463) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (141463) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (141463) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (141983) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (141983) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (141983) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (141983) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (142443) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (142443) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (142443) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (142443) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (144443) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (144443) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (144443) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (144453) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (144613) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (144613) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (144613) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (144613) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (144963) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (144963) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (144963) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (144963) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (145403) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (145403) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (145403) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (145403) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (145813) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (145813) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (145813) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (145823) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (146183) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (146183) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (146183) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (146183) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (146453) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (146453) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (146453) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (146463) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (146833) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (146833) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (146833) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (146833) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (147173) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (147173) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (147173) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (147173) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (147513) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (147513) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (147513) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (147513) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (147783) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (147783) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (147783) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (147783) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (148073) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (148073) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (148073) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (148073) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (148333) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (148343) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (148343) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (148343) Memory: Free DROM: 390636 bytes[0m
+
+***ERROR*** A stack overflow in task Logging Task has been detected.
+
+
+Backtrace: 0x403759d5:0x3fc99ab0 0x40379c39:0x3fc99ad0 0x4037a88e:0x3fc99af0 0x4037ba97:0x3fc99b70 0x4037a954:0x3fc99b90 0x4037a94a:0x00000001 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: b382ceabd
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 21 2024 16:12:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a790h ( 42896) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001a7b8 vaddr=3fc92400 size=02a54h ( 10836) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d214 vaddr=40374000 size=02e04h ( 11780) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=189c8h (100808) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=000389f0 vaddr=40376e04 size=0b578h ( 46456) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     hello_world[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Aug 21 2024 16:11:08[0m
+[0;32mI (200) app_init: ELF file SHA256:  b382ceabd...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC95710 len 00054000 (336 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (286) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) main_task: Returned from app_main()[0m
+[0;32mI (1873) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (1873) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (1873) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (1873) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (2303) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (2303) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (2303) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (2303) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (2683) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (2683) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (2683) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (2693) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3253) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3253) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3253) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3253) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3473) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3473) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3473) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3473) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3583) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3583) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3583) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3593) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3593) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3593) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3603) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3603) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3783) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3783) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3783) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3783) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (3953) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (3953) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (3953) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (3953) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (4073) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (4073) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (4073) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (4073) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (4233) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (4233) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (4233) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (4233) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (4513) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (4513) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (4523) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (4523) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (4793) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (4793) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (4793) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (4793) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5123) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5123) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5123) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5123) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5233) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5233) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5233) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5233) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5433) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5433) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5433) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5443) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5583) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5583) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5583) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5593) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5763) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5763) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5763) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5763) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (5843) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5843) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5843) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5843) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6043) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6043) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6043) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6043) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6123) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6123) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6123) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6123) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6203) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6203) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6203) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6213) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6373) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6373) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6373) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6383) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6533) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6533) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6533) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6533) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6673) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6683) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6683) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6683) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (6973) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (6973) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (6973) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (6973) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7163) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7163) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7163) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7163) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7353) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (7353) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (7353) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (7353) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (7453) Memory: Free IRAM: 0 bytes[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x403782db  PS      : 0x00060034  A0      : 0x8037a6f8  A1      : 0x3fc933a0  
+A2      : 0x00000000  A3      : 0x73089203  A4      : 0x40376dfc  A5      : 0x3fc99730  
+A6      : 0x3fc9255c  A7      : 0x00000004  A8      : 0x00000000  A9      : 0x3fc93410  
+A10     : 0x0000000d  A11     : 0x00000000  A12     : 0x3fc99730  A13     : 0x3fc99710  
+A14     : 0x00000002  A15     : 0xffffffff  SAR     : 0x00000013  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffe  
+Core  0 was running in ISR context:
+EPC1    : 0x42016edb  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x403782db
+
+
+Backtrace: 0x403782d8:0x3fc933a0 0x4037a6f5:0x3fc933c0 0x4037a21d:0x3fc933f0 0x40376d01:0x3fc93410 0x403773be:0x3fc93440 0x40377432:0x3fc93460 0x40377181:0x3fc93480 0x400559dd:0x3fc99700 0x4037bfbe:0x3fc99710 0x403769b3:0x3fc99730 0x40376aa1:0x3fc99760 0x42007489:0x3fc99780 0x42008761:0x3fc997a0 0x4200d4aa:0x3fc997c0 0x420082b0:0x3fc997e0 0x42008761:0x3fc99800 0x4200ceea:0x3fc99820 0x4200c7ad:0x3fc99840 0x4200c7fe:0x3fc99860 0x4200cdf1:0x3fc99880 0x42010e23:0x3fc998b0 0x42010801:0x3fc998d0 0x4200cf61:0x3fc99bf0 0x42018961:0x3fc99c20 0x403801f5:0x3fc99c50 0x420091c0:0x3fc99ca0 0x4200920b:0x3fc99cc0 0x4037a49d:0x3fc99ce0
+
+
+Core  1 register dump:
+PC      : 0x403783ca  PS      : 0x00060734  A0      : 0x820029b9  A1      : 0x3fc99150  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fc97190  A5      : 0x3fc97170  
+A6      : 0x40375d7c  A7      : 0x00000001  A8      : 0x8200b5aa  A9      : 0x3fc99110  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fc97170  A13     : 0x3fc97150  
+A14     : 0x00000001  A15     : 0x3fc99318  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x403783c7:0x3fc99150 0x420029b6:0x3fc99170 0x4037b435:0x3fc99190 0x4037a49d:0x3fc991b0
+
+
+
+
+ELF file SHA256: b382ceabd
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 21 2024 16:12:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a790h ( 42896) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001a7b8 vaddr=3fc92400 size=02a54h ( 10836) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d214 vaddr=40374000 size=02e04h ( 11780) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=189c8h (100808) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=000389f0 vaddr=40376e04 size=0b578h ( 46456) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     hello_world[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Aug 21 2024 16:11:08[0m
+[0;32mI (200) app_init: ELF file SHA256:  b382ceabd...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC95710 len 00054000 (336 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (286) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) main_task: Returned from app_main()[0m
+[0;32mI (5893) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (5893) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (5893) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (5893) Memory: Free DROM: 390636 bytes[0m
+[0;32mI (40923) Memory: Free IRAM: 0 bytes[0m
+[0;32mI (40923) Memory: Free DRAM: 390636 bytes[0m
+[0;32mI (40923) Memory: Free IROM: 390636 bytes[0m
+[0;32mI (40933) Memory: Free DROM: 390636 bytes[0m
+
+***ERROR*** A stack overflow in task Logging Task has been detected.
+
+
+Backtrace: 0x403759d5:0x3fc99ab0 0x40379c39:0x3fc99ad0 0x4037a88e:0x3fc99af0 0x4037ba97:0x3fc99b70 0x4037a954:0x3fc99b90 0x4037a94a:0x00000001 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: b382ceabd
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 21 2024 16:12:34[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a790h ( 42896) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001a7b8 vaddr=3fc92400 size=02a54h ( 10836) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d214 vaddr=40374000 size=02e04h ( 11780) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=189c8h (100808) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=000389f0 vaddr=40376e04 size=0b578h ( 46456) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     hello_world[0m
+[0;32mI (189) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Aug 21 2024 16:11:08[0m
+[0;32mI (200) app_init: ELF file SHA256:  b382ceabd...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC95710 len 00054000 (336 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: gd[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (286) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) main_task: Returned from app_main()[0m

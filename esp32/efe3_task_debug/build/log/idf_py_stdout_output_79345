@@ -1,0 +1,22 @@
+[1/5] cd /Users/gabrielgorospe/esp/efe3_task_debug/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp/efe3_task_debug/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp/efe3_task_debug/build/tasks.bin
+tasks.bin binary size 0x3aea0 bytes. Smallest app partition is 0x200000 bytes. 0x1c5160 bytes (88%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp/efe3_task_debug/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp/efe3_task_debug/build/bootloader/bootloader.bin
+Bootloader binary size 0x5aa0 bytes. 0x2560 bytes (29%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/efe3_task_debug/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/tty.usbmodem51850045511 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x0 bootloader/bootloader.bin 0x10000 tasks.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.8.dev4
+Serial port /dev/tty.usbmodem51850045511
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 48:27:e2:ef:b5:54
+Uploading stub...
+
+A fatal error occurred: Failed to write to target RAM (result was 01070000: Operation timed out)
+FAILED: CMakeFiles/flash /Users/gabrielgorospe/esp/efe3_task_debug/build/CMakeFiles/flash 
+cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/efe3_task_debug/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,61 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp/servo/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp/servo/build/bootloader/bootloader.bin
+Bootloader binary size 0x5270 bytes. 0x2d90 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/servo.c.obj
+/Users/gabrielgorospe/esp/servo/main/servo.c: In function 'app_main':
+/Users/gabrielgorospe/esp/servo/main/servo.c:40:9: warning: unused variable 'angle' [-Wunused-variable]
+   40 |     int angle = 0;
+      |         ^~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable servo.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/gabrielgorospe/esp/servo/build/servo.bin
+[9/10] cd /Users/gabrielgorospe/esp/servo/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp/servo/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp/servo/build/servo.bin
+servo.bin binary size 0x34ca0 bytes. Smallest app partition is 0x100000 bytes. 0xcb360 bytes (79%) free.
+[9/10] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/servo/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem14101 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 servo.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/cu.usbmodem14101
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 74:4d:bd:8d:1e:3c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00044fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21104 bytes to 13086...
+Writing at 0x00000000... (100 %)
+Wrote 21104 bytes (13086 compressed) at 0x00000000 in 0.3 seconds (effective 601.9 kbit/s)...
+Hash of data verified.
+Compressed 216224 bytes to 112647...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001cff7... (28 %)
+Writing at 0x0002316c... (42 %)
+Writing at 0x00029df6... (57 %)
+Writing at 0x000303e1... (71 %)
+Writing at 0x00038ef0... (85 %)
+Writing at 0x0003f092... (100 %)
+Wrote 216224 bytes (112647 compressed) at 0x00010000 in 1.5 seconds (effective 1186.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 705.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

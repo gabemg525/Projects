@@ -1,0 +1,126 @@
+[1/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_checksum.c.obj
+[2/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj
+[3/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/riscv/core_dump_port.c.obj
+[4/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj
+[5/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj
+[6/50] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj
+[7/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj
+[8/50] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.obj
+[9/50] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj
+[10/50] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj
+[11/50] Linking C static library esp-idf/espcoredump/libespcoredump.a
+[12/50] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj
+[13/50] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj
+[14/50] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.obj
+[15/50] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj
+[16/50] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ble_hidd_demo_main.c.obj
+../main/ble_hidd_demo_main.c: In function 'read_gyro':
+../main/ble_hidd_demo_main.c:234:11: warning: unused variable 'gyro_z_dps' [-Wunused-variable]
+  234 |     float gyro_z_dps = (float)gyro_z * dps_conversion;
+      |           ^~~~~~~~~~
+../main/ble_hidd_demo_main.c:233:11: warning: unused variable 'gyro_y_dps' [-Wunused-variable]
+  233 |     float gyro_y_dps = (float)gyro_y * dps_conversion;
+      |           ^~~~~~~~~~
+../main/ble_hidd_demo_main.c:232:11: warning: unused variable 'gyro_x_dps' [-Wunused-variable]
+  232 |     float gyro_x_dps = (float)gyro_x * dps_conversion;
+      |           ^~~~~~~~~~
+../main/ble_hidd_demo_main.c: At top level:
+../main/ble_hidd_demo_main.c:60:13: warning: 'send_volum_up' defined but not used [-Wunused-variable]
+   60 | static bool send_volum_up = false;
+      |             ^~~~~~~~~~~~~
+[17/50] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj
+[18/50] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj
+[19/50] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj
+[20/50] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj
+[21/50] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj
+[22/50] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj
+[23/50] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj
+[24/50] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj
+[25/50] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj
+[26/50] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj
+[27/50] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj
+[28/50] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp/lab3_3/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp/lab3_3/build/bootloader/bootloader.bin
+Bootloader binary size 0x5050 bytes. 0x2fb0 bytes (37%) free.
+[29/48] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj
+[30/48] Linking C static library esp-idf/sdmmc/libsdmmc.a
+[31/48] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj
+[32/48] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj
+[33/48] Linking C static library esp-idf/wear_levelling/libwear_levelling.a
+[34/48] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj
+[35/48] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj
+[36/48] Linking C static library esp-idf/fatfs/libfatfs.a
+[37/48] Linking C static library esp-idf/bt/libbt.a
+[38/48] Linking C static library esp-idf/esp_hid/libesp_hid.a
+[39/48] Linking C static library esp-idf/protocomm/libprotocomm.a
+[40/48] Linking C static library esp-idf/esp_local_ctrl/libesp_local_ctrl.a
+[41/48] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[42/48] Linking C static library esp-idf/main/libmain.a
+[43/48] Generating ld/sections.ld
+[44/48] Building C object CMakeFiles/hidd_demos.elf.dir/project_elf_src_esp32c3.c.obj
+[45/48] Linking CXX executable hidd_demos.elf
+[46/48] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated /Users/gabrielgorospe/esp/lab3_3/build/hidd_demos.bin
+[47/48] cd /Users/gabrielgorospe/esp/lab3_3/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp/lab3_3/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp/lab3_3/build/hidd_demos.bin
+hidd_demos.bin binary size 0xc0cb0 bytes. Smallest app partition is 0x100000 bytes. 0x3f350 bytes (25%) free.
+[47/48] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.20.5/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp/lab3_3/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32c3 -p /dev/cu.usbmodem14301 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 hidd_demos.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port /dev/cu.usbmodem14301
+Connecting...
+Chip is ESP32-C3 (revision v0.4)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:85:18:00:e8:58
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000d0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20560 bytes to 12626...
+Writing at 0x00000000... (100 %)
+Wrote 20560 bytes (12626 compressed) at 0x00000000 in 0.4 seconds (effective 443.0 kbit/s)...
+Hash of data verified.
+Compressed 789680 bytes to 407550...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001c7a0... (8 %)
+Writing at 0x00029f46... (12 %)
+Writing at 0x000340c2... (16 %)
+Writing at 0x0003a149... (20 %)
+Writing at 0x00040c77... (24 %)
+Writing at 0x00047c58... (28 %)
+Writing at 0x0004f834... (32 %)
+Writing at 0x00057012... (36 %)
+Writing at 0x0005e4d7... (40 %)
+Writing at 0x00065aca... (44 %)
+Writing at 0x0006c8c6... (48 %)
+Writing at 0x00074b46... (52 %)
+Writing at 0x0007c898... (56 %)
+Writing at 0x00084cb2... (60 %)
+Writing at 0x0008c75f... (64 %)
+Writing at 0x00093981... (68 %)
+Writing at 0x0009af64... (72 %)
+Writing at 0x000a1e4e... (76 %)
+Writing at 0x000a95ab... (80 %)
+Writing at 0x000b0479... (84 %)
+Writing at 0x000b6588... (88 %)
+Writing at 0x000bc9ae... (92 %)
+Writing at 0x000c3c2e... (96 %)
+Writing at 0x000cad1d... (100 %)
+Wrote 789680 bytes (407550 compressed) at 0x00010000 in 6.1 seconds (effective 1039.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 486.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,85 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/bootloader/bootloader.bin
+Bootloader binary size 0x5270 bytes. 0x2d90 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/main/main.c:12:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   12 | const static char *TAG = "WEB_SERVER";
+      |                    ^~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable WebServer.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/WebServer.bin
+[9/10] cd /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/WebServer.bin
+WebServer.bin binary size 0xc92b0 bytes. Smallest app partition is 0x100000 bytes. 0x36d50 bytes (21%) free.
+[9/10] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem14101 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 WebServer.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/cu.usbmodem14101
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 74:4d:bd:8d:1e:3c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000d9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21104 bytes to 13084...
+Writing at 0x00000000... (100 %)
+Wrote 21104 bytes (13084 compressed) at 0x00000000 in 0.3 seconds (effective 497.9 kbit/s)...
+Hash of data verified.
+Compressed 823984 bytes to 512180...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d1c5... (6 %)
+Writing at 0x00025b78... (9 %)
+Writing at 0x0002a86f... (12 %)
+Writing at 0x00034790... (15 %)
+Writing at 0x0003cc88... (18 %)
+Writing at 0x00042f1d... (21 %)
+Writing at 0x000492e9... (25 %)
+Writing at 0x0004faa1... (28 %)
+Writing at 0x000558f7... (31 %)
+Writing at 0x0005b875... (34 %)
+Writing at 0x00061453... (37 %)
+Writing at 0x00066eb0... (40 %)
+Writing at 0x0006bd8f... (43 %)
+Writing at 0x00071148... (46 %)
+Writing at 0x00076599... (50 %)
+Writing at 0x0007b697... (53 %)
+Writing at 0x000808d4... (56 %)
+Writing at 0x000867d7... (59 %)
+Writing at 0x0008bfc8... (62 %)
+Writing at 0x00091bb8... (65 %)
+Writing at 0x0009780b... (68 %)
+Writing at 0x0009d1d0... (71 %)
+Writing at 0x000a2b83... (75 %)
+Writing at 0x000a8a15... (78 %)
+Writing at 0x000af0c2... (81 %)
+Writing at 0x000b434c... (84 %)
+Writing at 0x000bda4e... (87 %)
+Writing at 0x000c5dc6... (90 %)
+Writing at 0x000cbb72... (93 %)
+Writing at 0x000d23b0... (96 %)
+Writing at 0x000d74cb... (100 %)
+Wrote 823984 bytes (512180 compressed) at 0x00010000 in 5.7 seconds (effective 1156.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 549.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

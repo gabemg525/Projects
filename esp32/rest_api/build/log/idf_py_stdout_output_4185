@@ -1,0 +1,72 @@
+[1/5] cd /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/partition_table/partition-table.bin /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/WebServer.bin
+WebServer.bin binary size 0xc92c0 bytes. Smallest app partition is 0x100000 bytes. 0x36d40 bytes (21%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/bootloader/esp-idf/esptool_py && /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python /Users/gabrielgorospe/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build/bootloader/bootloader.bin
+Bootloader binary size 0x5270 bytes. 0x2d90 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/gabrielgorospe/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.30.2/bin/cmake -D IDF_PATH=/Users/gabrielgorospe/esp/esp-idf -D "SERIAL_TOOL=/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/gabrielgorospe/esp_embd403/EFE_projects/EFE5_Wifi/WebServer/build -P /Users/gabrielgorospe/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem14101 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 WebServer.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/cu.usbmodem14101
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 74:4d:bd:8d:1e:3c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000d9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21104 bytes to 13084...
+Writing at 0x00000000... (100 %)
+Wrote 21104 bytes (13084 compressed) at 0x00000000 in 0.3 seconds (effective 511.3 kbit/s)...
+Hash of data verified.
+Compressed 824000 bytes to 512212...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d1c0... (6 %)
+Writing at 0x00025b85... (9 %)
+Writing at 0x0002a86f... (12 %)
+Writing at 0x0003477e... (15 %)
+Writing at 0x0003cc77... (18 %)
+Writing at 0x00042efe... (21 %)
+Writing at 0x000492ba... (25 %)
+Writing at 0x0004fa73... (28 %)
+Writing at 0x000558ba... (31 %)
+Writing at 0x0005b83c... (34 %)
+Writing at 0x000613fc... (37 %)
+Writing at 0x00066e8a... (40 %)
+Writing at 0x0006bd6b... (43 %)
+Writing at 0x00071120... (46 %)
+Writing at 0x00076561... (50 %)
+Writing at 0x0007b67c... (53 %)
+Writing at 0x000808b8... (56 %)
+Writing at 0x000867bd... (59 %)
+Writing at 0x0008bfb8... (62 %)
+Writing at 0x00091ba5... (65 %)
+Writing at 0x000977fc... (68 %)
+Writing at 0x0009d1c0... (71 %)
+Writing at 0x000a2b73... (75 %)
+Writing at 0x000a8a06... (78 %)
+Writing at 0x000af0b3... (81 %)
+Writing at 0x000b4340... (84 %)
+Writing at 0x000bda1d... (87 %)
+Writing at 0x000c5dbc... (90 %)
+Writing at 0x000cbb58... (93 %)
+Writing at 0x000d238b... (96 %)
+Writing at 0x000d74a7... (100 %)
+Wrote 824000 bytes (512212 compressed) at 0x00010000 in 5.7 seconds (effective 1153.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 555.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

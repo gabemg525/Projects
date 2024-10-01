@@ -1,0 +1,36 @@
+Open On-Chip Debugger v0.12.0-esp32-20230313 (2023-03-13-09:08)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : only one transport option; autoselecting 'jtag'
+Info : esp_usb_jtag: VID set to 0x303a and PID to 0x1001
+Info : esp_usb_jtag: capabilities descriptor set to 0x2000
+Warn : Transport "jtag" was already selected
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : esp_usb_jtag: serial (34:85:18:00:E8:58)
+Info : esp_usb_jtag: Device found. Base speed 40000KHz, div range 1 to 255
+Info : clock speed 40000 kHz
+Info : JTAG tap: esp32c3.cpu tap/device found: 0x00005c25 (mfg: 0x612 (Espressif Systems), part: 0x0005, ver: 0x0)
+Info : datacount=2 progbufsize=16
+Error: Abstract command ended in error 'busy' (abstractcs=0x10001102)
+Error: Timed out after 5s waiting for busy to go low (abstractcs=0x10001102). Increase the timeout with riscv set_command_timeout_sec.
+Error: Abstract command ended in error 'busy' (abstractcs=0x10001102)
+Error: Timed out after 5s waiting for busy to go low (abstractcs=0x10001102). Increase the timeout with riscv set_command_timeout_sec.
+Error: Abstract command ended in error 'busy' (abstractcs=0x10001102)
+Error: Timed out after 5s waiting for busy to go low (abstractcs=0x10001102). Increase the timeout with riscv set_command_timeout_sec.
+Error: Fatal: Failed to read MISA from hart 0.
+Warn : target esp32c3 examination failed
+Info : starting gdb server for esp32c3 on 3333
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Error: Target not examined yet
+Error executing event gdb-attach on target esp32c3:
+/Users/gabrielgorospe/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230313/openocd-esp32/share/openocd/scripts/target/esp_common.cfg:4: Error: 
+at file "/Users/gabrielgorospe/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230313/openocd-esp32/share/openocd/scripts/target/esp_common.cfg", line 4
+Warn : No symbols for FreeRTOS!
+Error: Target not halted
+Error: auto_probe failed
+Error: Connect failed. Consider setting up a gdb-attach event for the target to prepare target for GDB connect, or use 'gdb_memory_map disable'.
+Error: attempted 'gdb' connection rejected
+shutdown command invoked

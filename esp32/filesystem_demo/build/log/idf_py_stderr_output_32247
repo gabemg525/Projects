@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbmodem14201 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4037e7ad: spimem_flash_ll_user_start at /Users/gabrielgorospe/esp/esp-idf/components/hal/esp32s3/include/hal/spimem_flash_ll.h:394
+ (inlined by) spi_flash_hal_read at /Users/gabrielgorospe/esp/esp-idf/components/hal/spi_flash_hal_common.inc:212
+[0m
+[0m

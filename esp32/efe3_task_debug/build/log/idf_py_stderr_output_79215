@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/__main__.py", line 9, in <module>
+    esptool._main()
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1170, in _main
+    main()
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 721, in main
+    esp = esp or get_default_connected_device(
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/__init__.py", line 1055, in get_default_connected_device
+    _esp.connect(before, connect_attempts)
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 703, in connect
+    last_error = self._connect_attempt(reset_strategy, mode)
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/loader.py", line 588, in _connect_attempt
+    reset_strategy()  # Reset the chip to bootloader (download mode)
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/reset.py", line 38, in __call__
+    self.reset()
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/reset.py", line 121, in reset
+    self._setDTR(True)  # Set IO0
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esptool/reset.py", line 55, in _setDTR
+    self.port.setDTR(state)
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/serial/serialutil.py", line 603, in setDTR
+    self.dtr = value
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/serial/serialutil.py", line 473, in dtr
+    self._update_dtr_state()
+  File "/Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/serial/serialposix.py", line 713, in _update_dtr_state
+    fcntl.ioctl(self.fd, TIOCMBIS, TIOCM_DTR_str)
+OSError: [Errno 6] Device not configured
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  /Users/gabrielgorospe/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/Users/gabrielgorospe/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3
+  failed.
+
+
+

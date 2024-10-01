@@ -1,0 +1,97 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbmodem14201 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403783ca: esp_cpu_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m0x403759d5: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x40379c39: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037a88e: vApplicationStackOverflowHook at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4037ba97: vTaskSwitchContext at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4037a954: _frxt_dispatch at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037a94a: _frxt_int_exit at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40375914: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403759d5: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x40379c39: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037a88e: vApplicationStackOverflowHook at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4037ba97: vTaskSwitchContext at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4037a954: _frxt_dispatch at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037a94a: _frxt_int_exit at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40375914: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403759d5: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x40379c39: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037a88e: vApplicationStackOverflowHook at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4037ba97: vTaskSwitchContext at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4037a954: _frxt_dispatch at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037a94a: _frxt_int_exit at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40375914: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403782db: esp_cpu_compare_and_set at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:239
+[0m
+[0;33m0x40376dfc: _xt_user_exit at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m0x42016edb: uart_hal_write_txfifo at /Users/gabrielgorospe/esp/esp-idf/components/hal/uart_hal_iram.c:27
+0x403782db: esp_cpu_compare_and_set at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:239
+[0m
+[0;33m0x403782d8: xt_utils_compare_and_set at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/include/xt_utils.h:223
+ (inlined by) esp_cpu_compare_and_set at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:232
+0x4037a6f5: spinlock_acquire at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/include/spinlock.h:130
+ (inlined by) xPortEnterCriticalTimeout at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:474
+0x4037a21d: vPortEnterCritical at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGiveFromISR at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1385
+0x40376d01: gpio_interrupt_handler at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:61
+0x403773be: gpio_isr_loop at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:466
+0x40377432: gpio_intr_service at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_gpio/src/gpio.c:488
+0x40377181: _xt_lowint1 at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037bfbe: vPortClearInterruptMaskFromISR at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) xTaskGetSchedulerState at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5019
+0x403769b3: lock_release_generic at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:180
+0x40376aa1: _lock_release_recursive at /Users/gabrielgorospe/esp/esp-idf/components/newlib/locks.c:211
+0x42007489: uart_write at /Users/gabrielgorospe/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:225
+0x42008761: esp_vfs_write at /Users/gabrielgorospe/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4200d4aa: write at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+0x420082b0: console_write at /Users/gabrielgorospe/esp/esp-idf/components/esp_vfs_console/vfs_console.c:70
+0x42008761: esp_vfs_write at /Users/gabrielgorospe/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4200ceea: __swrite at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x4200c7ad: __sflush_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x4200c7fe: _fflush_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+0x4200cdf1: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x42010e23: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42010801: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4200cf61: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x42018961: esp_log_writev at /Users/gabrielgorospe/esp/esp-idf/components/log/src/os/log_write.c:34
+0x403801f5: esp_log_write at /Users/gabrielgorospe/esp/esp-idf/components/log/src/os/log_write.c:44
+0x420091c0: log_memory_usage at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:53 (discriminator 1)
+0x4200920b: logging_task at /Users/gabrielgorospe/esp/efe2_debug_gpio/main/debug_gpio.c:73
+0x4037a49d: vPortTaskWrapper at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403783ca: esp_cpu_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m0x40375d7c: ipc_task at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/esp_ipc.c:53
+[0m
+[0;33m0x403783c7: xt_utils_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at /Users/gabrielgorospe/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x420029b6: esp_vApplicationIdleHook at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x4037b435: prvIdleTask at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x4037a49d: vPortTaskWrapper at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375914: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x403759d5: panic_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/panic.c:453
+0x40379c39: esp_system_abort at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4037a88e: vApplicationStackOverflowHook at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+0x4037ba97: vTaskSwitchContext at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4037a954: _frxt_dispatch at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037a94a: _frxt_int_exit at /Users/gabrielgorospe/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40375914: esp_restart_noos at /Users/gabrielgorospe/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

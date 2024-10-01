@@ -1,0 +1,194 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403782d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1790
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcf0
+load:0x403cb700,len:0x2d88
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep  4 2024 13:29:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0abb8h ( 43960) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001abe0 vaddr=3fc92500 size=02aach ( 10924) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d694 vaddr=40374000 size=02984h ( 10628) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=191d0h (102864) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=000391f8 vaddr=40376984 size=0ba90h ( 47760) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (162) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     servo[0m
+[0;32mI (190) app_init: App version:      1[0m
+[0;32mI (194) app_init: Compile time:     Sep  4 2024 13:24:56[0m
+[0;32mI (200) app_init: ELF file SHA256:  c087a9ca9...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (227) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (234) heap_init: At 3FC958A0 len 00053E70 (335 KiB): RAM[0m
+[0;32mI (240) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (246) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (260) spi_flash: detected chip: gd[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (267) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (280) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (287) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (294) main_task: Started on CPU0[0m
+[0;32mI (304) main_task: Calling app_main()[0m
+duty cycle: 400
+duty cycle: 600
+duty cycle: 800
+duty cycle: 1000
+duty cycle: 177
+duty cycle: 377
+duty cycle: 577
+duty cycle: 777
+duty cycle: 977
+duty cycle: 154
+duty cycle: 354
+duty cycle: 554
+duty cycle: 754
+duty cycle: 954
+duty cycle: 131
+duty cycle: 331
+duty cycle: 531
+duty cycle: 731
+duty cycle: 931
+duty cycle: 108
+duty cycle: 308
+duty cycle: 508
+duty cycle: 708
+duty cycle: 908
+duty cycle: 85
+duty cycle: 285
+duty cycle: 485
+duty cycle: 685
+duty cycle: 885
+duty cycle: 62
+duty cycle: 262
+duty cycle: 462
+duty cycle: 662
+duty cycle: 862
+duty cycle: 39
+duty cycle: 239
+duty cycle: 439
+duty cycle: 639
+duty cycle: 839
+duty cycle: 16
+duty cycle: 216
+duty cycle: 416
+duty cycle: 616
+duty cycle: 816
+duty cycle: 1016
+duty cycle: 193
+duty cycle: 393
+duty cycle: 593
+duty cycle: 793
+duty cycle: 993
+duty cycle: 170
+duty cycle: 370
+duty cycle: 570
+duty cycle: 770
+duty cycle: 970
+duty cycle: 147
+duty cycle: 347
+duty cycle: 547
+duty cycle: 747
+duty cycle: 947
+duty cycle: 124
+duty cycle: 324
+duty cycle: 524
+duty cycle: 724
+duty cycle: 924
+duty cycle: 101
+duty cycle: 301
+duty cycle: 501
+duty cycle: 701
+duty cycle: 901
+duty cycle: 78
+duty cycle: 278
+duty cycle: 478
+duty cycle: 678
+duty cycle: 878
+duty cycle: 55
+duty cycle: 255
+duty cycle: 455
+duty cycle: 655
+duty cycle: 855
+duty cycle: 32
+duty cycle: 232
+duty cycle: 432
+duty cycle: 632
+duty cycle: 832
+duty cycle: 9
+duty cycle: 209
+duty cycle: 409
+duty cycle: 609
+duty cycle: 809
+duty cycle: 1009
+duty cycle: 186
+duty cycle: 386
+duty cycle: 586
+duty cycle: 786
+duty cycle: 986
+duty cycle: 163
+duty cycle: 363
+duty cycle: 563
+duty cycle: 763
+duty cycle: 963
+duty cycle: 140
+duty cycle: 340
+duty cycle: 540
+duty cycle: 740
+duty cycle: 940
+duty cycle: 117
+duty cycle: 317
+duty cycle: 517
+duty cycle: 717
+duty cycle: 917
+duty cycle: 94
+duty cycle: 294
+duty cycle: 494
+duty cycle: 694
+duty cycle: 894
+duty cycle: 71
+duty cycle: 271
+duty cycle: 471
+duty cycle: 671
+duty cycle: 871
+duty cycle: 48
+duty cycle: 248
+duty cycle: 448
+duty cycle: 648
+duty cycle: 848
+duty cycle: 25
+duty cycle: 225
+duty cycle: 425
+duty cycle: 625
+duty cycle: 825
+duty cycle: 2
+duty cycle: 202
+duty cycle: 402
+duty cycle: 602
+duty cycle: 802
+duty cycle: 1002
+duty cycle: 179
