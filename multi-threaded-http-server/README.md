@@ -1,7 +1,5 @@
-#Assignment 4 directory
-Gabriel Gorospe
-
 Multi-Threaded HTTP Server
+Gabriel Gorospe
 
 httpserver.c
 
