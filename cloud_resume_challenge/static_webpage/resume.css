@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 20px;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Header / Name Section */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-info a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Section Headings */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Smaller Section Headings */
+h3 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #444;
+}
+
+/* Sub-headings (like job positions, project titles) */
+.sub-heading {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+/* Lists / Bullet Points */
+ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* For clarity in dates & locations */
+.job-title {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.job-details {
+  display: inline-block;
+  margin-left: 5px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Spacing for each job entry */
+.job {
+  margin-bottom: 15px;
+}
+
+/* Additional spacing for references */
+.references {
+  margin-top: 20px;
+}
+
+/* Education, Projects, etc. can be individually styled if needed */
+.education,
+.experience,
+.projects,
+.technical-skills,
+.extracurriculars {
+  margin-top: 15px;
+}
+
